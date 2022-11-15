@@ -1,0 +1,1 @@
+{"name":"Local: binarysearch","url":"e:\\sublime\\vs code\\cpp\\binarysearch.cpp","tests":[{"id":1656401287184,"input":"5 5\n3 3 5 8 9\n2 4 8 1 10","output":"0\n2\n4\n0\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\binarysearch.cpp","group":"local","local":true}

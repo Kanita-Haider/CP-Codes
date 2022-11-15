@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"e:\\sublime\\vs code\\cpp\\dfs bfs contest\\D.cpp","tests":[{"id":1641624283854,"input":"2\n2\n1 2\n2 3\n3\n1 2\n2 3\n4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\dfs bfs contest\\D.cpp","group":"local","local":true}

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601998612 source:e:\ex. codes\pointtersorting\main.c
+	<stdio.h>
+	<stdlib.h>
+

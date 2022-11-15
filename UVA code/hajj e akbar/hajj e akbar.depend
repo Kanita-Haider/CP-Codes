@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1616478383 source:e:\c++ ex codes\hajj e akbar\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

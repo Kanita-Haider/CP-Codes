@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"e:\\sublime\\vs code\\cpp\\cp2 mid\\C.cpp","tests":[{"id":1652247255765,"input":"2\nabc\ndef\nabdcf\nab\nz\nazazazazb","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\cp2 mid\\C.cpp","group":"local","local":true}

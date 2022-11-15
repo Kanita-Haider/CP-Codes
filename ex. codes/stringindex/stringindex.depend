@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605160532 source:e:\ex. codes\stringindex\main.c
+	<stdio.h>
+	<string.h>
+

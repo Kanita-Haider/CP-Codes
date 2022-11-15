@@ -1,0 +1,1 @@
+{"name":"Local: d","url":"e:\\sublime\\vs code\\cpp\\ada22\\d.cpp","tests":[{"id":1657880350941,"input":"2\n6\n5 3 \n10 2 \n13 0 \n12 1\n1 1 \n15 1 \n3\n59 49\n45 2\n27 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\ada22\\d.cpp","group":"local","local":true}

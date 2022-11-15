@@ -1,0 +1,1 @@
+{"name":"Local: array partition","url":"e:\\sublime\\vs code\\cpp\\array partition.cpp","tests":[{"id":1629042772454,"input":"7 8 9\n6 7 8 9 6 5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\array partition.cpp","group":"local","local":true}

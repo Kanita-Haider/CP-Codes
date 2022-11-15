@@ -1,0 +1,1 @@
+{"name":"Local: kadane's algorithm","url":"e:\\sublime\\vs code\\cpp\\kadane's algorithm.cpp","tests":[{"id":1627486915489,"input":"2\n5\n1 -2 3 -2 5\n2\n-1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\kadane's algorithm.cpp","group":"local","local":true}

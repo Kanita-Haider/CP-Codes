@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1615738889 source:e:\c++ ex codes\digital fotress\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

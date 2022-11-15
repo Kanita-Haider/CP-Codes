@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603291184 source:e:\ex. codes\structfunc\main.c
+	<stdio.h>
+	<stdlib.h>
+

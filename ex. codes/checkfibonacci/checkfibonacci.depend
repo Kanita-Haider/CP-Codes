@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605073978 source:e:\ex. codes\checkfibonacci\main.c
+	<stdio.h>
+	<math.h>
+

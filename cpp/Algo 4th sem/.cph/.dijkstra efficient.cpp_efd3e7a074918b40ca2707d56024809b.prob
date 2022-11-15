@@ -1,0 +1,1 @@
+{"name":"Local: dijkstra efficient","url":"e:\\sublime\\vs code\\cpp\\Algo 4th sem\\dijkstra efficient.cpp","tests":[{"id":1652628299882,"input":"7 5\n1 2\n2 3\n3 4\n5 1 \n6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\Algo 4th sem\\dijkstra efficient.cpp","group":"local","local":true}

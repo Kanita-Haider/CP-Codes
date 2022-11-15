@@ -1,0 +1,1 @@
+{"name":"Local: codeforces 1406A","url":"e:\\vs code\\codeforces\\codeforces 1406A.cpp","tests":[{"id":1621958437088,"input":"4\n6\n0 2 1 5 0 1\n3\n0 1 2\n4\n0 2 0 1\n6\n1 2 3 4 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\vs code\\codeforces\\codeforces 1406A.cpp","group":"local","local":true}

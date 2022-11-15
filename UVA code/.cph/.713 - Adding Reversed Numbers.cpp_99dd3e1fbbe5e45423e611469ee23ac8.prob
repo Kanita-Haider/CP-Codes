@@ -1,0 +1,1 @@
+{"name":"Local: 713 - Adding Reversed Numbers","url":"e:\\vs code\\UVA code\\713 - Adding Reversed Numbers.cpp","tests":[{"id":1621624950510,"input":"3\n24  1\n4358  754\n305  794","output":"34\n1998\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\vs code\\UVA code\\713 - Adding Reversed Numbers.cpp","group":"local","local":true}

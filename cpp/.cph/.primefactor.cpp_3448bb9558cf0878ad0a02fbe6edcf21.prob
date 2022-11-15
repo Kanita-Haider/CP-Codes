@@ -1,0 +1,1 @@
+{"name":"Local: primefactor","url":"e:\\sublime\\vs code\\cpp\\primefactor.cpp","tests":[{"id":1628838349069,"input":"1500","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\primefactor.cpp","group":"local","local":true}

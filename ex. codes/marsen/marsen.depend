@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1598458442 source:e:\ex. codes\marsen\main.c
+	<stdio.h>
+	<stdbool.h>
+	<math.h>
+

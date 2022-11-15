@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605192186 source:e:\ex. codes\superprime\main.c
+	<stdio.h>
+	<math.h>
+

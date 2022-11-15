@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605102758 source:e:\ex. codes\string rev pointer\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

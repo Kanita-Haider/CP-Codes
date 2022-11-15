@@ -1,0 +1,50 @@
+{
+	// Place your vs code workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"comparator": {
+		"prefix": "comp",
+		"body": [
+		  " bool compare(pair<int, int> p1, pair<int, int> p2) {",
+		  "    return p1.second<p2.second;",
+		  "}",
+		  "//in main function call by..",
+		  "//element..",
+		  "const auto p = max_element(v.begin(), v.end(), compare);",
+		  "auto label = p->first;",
+		  "auto prob = p->second;",
+		  "//index..",
+		  "const auto p1 = max_element(v.begin(), v.end(), compare)- v.begin();",
+		  ""
+		],
+		"description": "comparator"
+	  },
+
+	  
+	  "prefix sum": {
+		"prefix": "prefix",
+		"body": [
+		  "void prefixsum(int arr[],int n,int prefix[]){",
+		  "    prefix[0]=arr[0];",
+		  "     for(int i=1; i<n;i++){",
+		  "         prefix[i]=prefix[i-1]+arr[i];",
+		  "    }",
+		  "}"
+		],
+		"description": "prefix sum"
+	  },
+
+}

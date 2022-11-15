@@ -1,0 +1,1 @@
+{"name":"Local: 12207","url":"e:\\sublime\\vs code\\UVA code\\12207.cpp","tests":[{"id":1629130085665,"input":"3 6\nN\nN\nE 1\nN\nN\nN\n10 2\nN\nN\n0 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\UVA code\\12207.cpp","group":"local","local":true}

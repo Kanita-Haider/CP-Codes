@@ -1,0 +1,1 @@
+{"name":"Local: 11388 - GCD LCM","url":"e:\\vs code\\cpp\\UVA code\\11388 - GCD LCM.cpp","tests":[{"id":1620115663862,"input":"1\n6 9","output":""},{"id":1620115882362,"input":"2\n1 2\n3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\vs code\\cpp\\UVA code\\11388 - GCD LCM.cpp","group":"local","local":true}

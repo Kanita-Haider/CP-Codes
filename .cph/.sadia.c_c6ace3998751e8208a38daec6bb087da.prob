@@ -1,0 +1,1 @@
+{"name":"Local: sadia","url":"e:\\sublime\\vs code\\sadia.c","tests":[{"id":1639025820537,"input":"cost\nc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\sadia.c","group":"local","local":true}

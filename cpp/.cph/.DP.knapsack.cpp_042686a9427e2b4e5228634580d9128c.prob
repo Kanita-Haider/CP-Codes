@@ -1,0 +1,1 @@
+{"name":"Local: DP","url":"e:\\sublime\\vs code\\cpp\\DP.knapsack.cpp","tests":[{"id":1645515641699,"input":"3\n60 100 120\n60 20 30\n50","output":""},{"id":1645516070251,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\sublime\\vs code\\cpp\\DP.knapsack.cpp","group":"local","local":true}
