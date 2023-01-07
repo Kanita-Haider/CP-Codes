@@ -9,16 +9,36 @@ using namespace std;
 #define MAX 100005
 
 
-
 int main(){
     int t; cin>>t;
     while(t--){
-        ll x,ans;
-        cin>>x;
-
-        ans=x*(x-1);
+        vector<pair<ll, ll>>vp;
+        ll n,x,p,ans; cin>>n>>x>>p;
+        ll arr[p+1];
+        for(ll i=0;i<p;i++){
+            cin>>arr[i];
+        }
+        sort(arr, arr+n);
+        while(n--){
+            ll v,d; cin>>v>>d;
+            ll tot_incon = x/d;
+            for(ll i=0;i<p;i++){
+                if((arr[i]%d)==0) tot_incon--;
+            }
+            vp.push_back(make_pair(tot_incon, v));
+            sort(vp.begin(), vp.end());
+            ans=vp[0].second;
+            for(ll i=0;i<vp.size()-1;i++){
+                if(vp[i].first==vp[i+1].first){
+                    if(vp[i].second>=vp[i+1].second)
+                        ans=vp[i].second;
+                    else
+                        ans=vp[i+1].second;
+                }
+                else break;
+            }
+        }
         cout<<ans<<endl;
-
     }
 
     return 0;
