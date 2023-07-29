@@ -63,28 +63,19 @@ int main()
 int t=0;
 cin>>t;
 while(t--){
-int n,ans=0, min=0,cnt=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
-for (int i = 1; i <=n; i++)
-{
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
-
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
-
+int n,ans=0,time,x;
+cin>>n>>time;
+set<int, greater<int> > st;
+for(int i=0;i<n;i++){
+        cin>>x;
+        st.insert( x ) ;
 }
+set<int> :: iterator itr;
+for (itr = st.begin(); itr != st.end(); itr++) 
+        cout << *itr << " ";
+    
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
-
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
+cout<<nl;
 }
 return 0;
 } 

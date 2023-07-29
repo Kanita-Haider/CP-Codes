@@ -63,28 +63,27 @@ int main()
 int t=0;
 cin>>t;
 while(t--){
-int n,ans=0, min=0,cnt=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
-for (int i = 1; i <=n; i++)
+int n,ans=0,l,r,max=0;
+cin>>l>>r;
+ans=l;
+for (int i = l; i <= r; i++)
 {
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
+    string num= to_string(i);
+    sort(num.begin(),num.end());
+     n= num[num.size()-1]- num[0];
 
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
 
+     if(n>max) {
+        max=n;
+        ans=i;
+
+        //cout<<max<<" "<<ans<<nl;
+
+     }
+     if(max==9) break;
 }
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
-
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
+cout<<ans<<nl;
 }
 return 0;
 } 

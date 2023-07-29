@@ -57,35 +57,31 @@ for(it = mp.begin() ; it!=mp.end(); it++)
 */
 
 
+
 int main()
 {
- FAST;
-int t=0;
-cin>>t;
-while(t--){
-int n,ans=0, min=0,cnt=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
-for (int i = 1; i <=n; i++)
-{
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
+int n, m;
+ cin>>n>>m;
+  
+  //vector<int>adj[m+5];
+  vector<pair<int,int>>adj[m+5];
+    for(int i=0;i<m;i++){
+        int u,v,w;
+        cin>>u>>v>>w;
+        adj[u].push_back({v,w});
+    }
 
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
+    for(int i=1;i<=n;i++){
+        cout<<i<<" => ";
+            for(auto& x: adj[i]){
+                cout<<x.first<<"|"<<x.second<<" ";
+                //cout<<x<<" ";
+            }
+            cout<<endl;
+    }
 
-}
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
 
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
-}
 return 0;
 } 
 

@@ -1,0 +1,1 @@
+{"name":"Local: adjacency matrix","url":"d:\\CP-Codes\\cpp\\adjacency matrix.cpp","tests":[{"id":1689255640144,"input":"5 7\n0 0 25\n0 1 5\n1 3 1\n1 4 15\n4 2 7\n4 3 11\n0 2 3\n2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\cpp\\adjacency matrix.cpp","group":"local","local":true}

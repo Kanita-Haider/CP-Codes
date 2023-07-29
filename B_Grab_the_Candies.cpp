@@ -63,28 +63,21 @@ int main()
 int t=0;
 cin>>t;
 while(t--){
-int n,ans=0, min=0,cnt=0;
+int n,sum1=0,sum2=0;
 cin>>n;
 vector<int>v(n+5);
 int arr[n+5];
-for (int i = 1; i <=n; i++)
-{
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
 
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
-
+for(int i=1;i<=n;i++){
+        cin>>arr[i];
+        if(arr[i]%2==0) sum1+=arr[i];
+        else sum2+=arr[i];
 }
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
+if(sum1>sum2)  cout<<"YES"<<nl;
+else cout<<"NO"<<nl;
 
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
+
 }
 return 0;
 } 

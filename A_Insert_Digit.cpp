@@ -60,32 +60,36 @@ for(it = mp.begin() ; it!=mp.end(); it++)
 int main()
 {
  FAST;
-int t=0;
-cin>>t;
-while(t--){
-int n,ans=0, min=0,cnt=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
-for (int i = 1; i <=n; i++)
-{
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
+int a,b,c,flag=0,sum;
+char x,y;
 
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
+cin>>a;
+b=a;
+for(int i=0; b!=0 ;i++){
+    
+    revs=mod*10;
 
+    mod=b%10;
+    revs=revs+mod;
+
+    ans=b/10;
 }
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
 
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
-}
 return 0;
 } 
+
+123
+mod=3
+12
+mod =2
+1
+mod =1
+ans=0
+
+3*10=30
+30+2=32
+32*10=320
+320+1=321
+
 

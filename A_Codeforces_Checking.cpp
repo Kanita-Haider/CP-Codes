@@ -63,28 +63,16 @@ int main()
 int t=0;
 cin>>t;
 while(t--){
-int n,ans=0, min=0,cnt=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
-for (int i = 1; i <=n; i++)
-{
-    cin>>arr[i];
-    ans=arr[i]-min;
-    if(ans>= 240)  cnt+=2; 
+int n,ans=0;
+char c;
+string s="codeforces";
+cin>>c;
 
-    else if(ans>= 120) cnt++;  
-    min=arr[i];
+if(s.find(c)!=string::npos )cout<<"YES"<<nl;
+else cout<<"NO"<<nl;
 
-}
 
-ans=1440-min;
- if(ans>= 240 )     cnt+=2; 
-else if(ans>= 120) cnt++;  
 
-if(cnt>=2)
-cout<<"YES"<<nl;
-else  cout<<"NO"<<nl;
 }
 return 0;
 } 
