@@ -56,38 +56,28 @@ for(it = mp.begin() ; it!=mp.end(); it++)
         cout<<(*it).second<<nl ;
 */
 
+int factorial(int n){
+
+    int fact[n+5];
+    fact[0]=1;
+    
+    for(int i=1;i<=n;i++){
+        fact[i]=i*fact[i-1];
+    }
+
+    return fact[n];
+
+}
 
 int main()
 {
  FAST;
-int t=0;
-cin>>t;
-while(t--){
-int n,ans=0,k;
-cin>>n>>k;
-vector<int>v1;
-vector<pair<int,int>>v;
-int arr[n+5];
-for(int i=1;i<=n;i++){
-    cin>>arr[i];
-    arr[i]=arr[i]%k;
-  //  cout<<arr[i]<<" ";
-} 
-//cout<<nl;
 
-for(int i=1;i<=n;i++){
-    if(arr[i]==0) v1.pb(i);
-    else {
-            int ind=-i;
-            v.pb(mp(arr[i],ind));
-    }
-}
+int n,ans=0;
+cin>>n;
 
-sort(v.rbegin(),v.rend());
-for(auto x: v1) cout<<x<<" ";
-for(auto x: v) cout<<abs(x.second)<<" ";
-cout<<nl;
-}
+cout<<factorial(n)<<nl;
+
 return 0;
 } 
 
