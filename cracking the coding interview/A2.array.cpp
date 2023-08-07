@@ -1,4 +1,5 @@
-
+//time complexity O(n)
+//space complexity O(1)
 
 int stock(vector<int>v){
 
