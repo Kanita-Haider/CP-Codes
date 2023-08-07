@@ -1,45 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define pi acos(-1)
-#define ms(a,b) memset(a, b, sizeof a)
-#define sp setprecision
-#define fasterInOut ios::sync_with_stdio(false); cin.tie(0);
-#define debug(x) cout<<@<<" = "<<x<<endl;
-#define MAX 100005
+     
+int main() {
+     
+     int n;
+     cin>>n;
+     vector<pair<int,int>> v(n+5);
+        for(int i=0; i<n;i++){
+     cin>>v[i].first>>v[i].second;
+      }
 
-
-int main(){
-    int t; cin>>t;
-    while(t--){
-        vector<pair<ll, ll>>vp;
-        ll n,x,p,ans; cin>>n>>x>>p;
-        ll arr[p+1];
-        for(ll i=0;i<p;i++){
-            cin>>arr[i];
-        }
-        sort(arr, arr+n);
-        while(n--){
-            ll v,d; cin>>v>>d;
-            ll tot_incon = x/d;
-            for(ll i=0;i<p;i++){
-                if((arr[i]%d)==0) tot_incon--;
+     sort(v.begin(),v.end());
+    for(int i=0; i<n-1;i++){
+        if(v[i].second>=v[i+1].first) {
+            if(v[i].second<=v[i+1].second){
+                v[i].second=v[i+1].second;
+                v.erase(v.begin()+i+1);
             }
-            vp.push_back(make_pair(tot_incon, v));
-            sort(vp.begin(), vp.end());
-            ans=vp[0].second;
-            for(ll i=0;i<vp.size()-1;i++){
-                if(vp[i].first==vp[i+1].first){
-                    if(vp[i].second>=vp[i+1].second)
-                        ans=vp[i].second;
-                    else
-                        ans=vp[i+1].second;
-                }
-                else break;
+            else{
+                v.erase(v.begin()+i+1);
             }
         }
-        cout<<ans<<endl;
     }
+    for(int i=0; i<v.size();i++){
+        cout<<v[i].first<<" "<<v[i].second<<endl;
+    }
+
 
     return 0;
 }
