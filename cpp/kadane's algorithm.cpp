@@ -7,6 +7,35 @@
 #define FAST ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
 
+
+
+ int maxSubArray(vector<int>& nums) {
+        
+    int ans=nums[0],sum=nums[0],n=nums.size();
+    for(int i=1; i<n;i++)
+        {
+        if(nums[i]>sum+nums[i]) sum=nums[i];
+        else sum+=nums[i]; 
+        ans=max(sum,ans);
+        
+    }
+    return ans;
+    }
+
+
+
+/*
+      int n; cin>>n;
+    vector<int>nums(n);
+    for(int i=0;i<n;i++){
+        cin>>nums[i];
+    }
+    */ 
+
+    
+/*
+wrong ans in all negative value array
+
 int main()
 {
  FAST;
@@ -28,3 +57,4 @@ cout<<ans<<"\n";
 }
 return 0;
 }
+*/
