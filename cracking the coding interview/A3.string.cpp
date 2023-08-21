@@ -8,6 +8,7 @@ bool check(string str){
     int f=0,s=0,t=0;
 
     for(int i=0;i<n;i++){
+
     if(str[i]=='(')  f++;
     else if(str[i]==')') {
             if(f>0) f--;
