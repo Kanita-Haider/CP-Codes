@@ -1,0 +1,1 @@
+{"name":"Local: loop2","url":"d:\\CP-Codes\\codechef\\loop2.cpp","tests":[{"id":1694354394250,"input":"42\n1\n2\n3\n5\n4","output":""},{"id":1694354412124,"input":"-12\n2\n3\n5\n4\n4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\codechef\\loop2.cpp","group":"local","local":true}
