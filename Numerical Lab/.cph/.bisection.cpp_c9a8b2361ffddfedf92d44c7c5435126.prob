@@ -1,0 +1,1 @@
+{"name":"Local: bisection","url":"d:\\CP-Codes\\Numerical Lab\\bisection.cpp","tests":[{"id":1694491976482,"input":"1 2 0.001","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\Numerical Lab\\bisection.cpp","group":"local","local":true}

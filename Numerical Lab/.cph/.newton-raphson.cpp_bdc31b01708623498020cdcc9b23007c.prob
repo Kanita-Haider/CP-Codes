@@ -1,0 +1,1 @@
+{"name":"Local: newton-raphson","url":"d:\\CP-Codes\\Numerical Lab\\newton-raphson.cpp","tests":[{"id":1694494078153,"input":"0 0.001 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\Numerical Lab\\newton-raphson.cpp","group":"local","local":true}
