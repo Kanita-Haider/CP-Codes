@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -64,11 +64,22 @@ int t=0;
 cin>>t;
 while(t--){
 int n,ans=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
+string a,b;
+cin>>a>>b;
 
-cout<<ans<<nl;
+int flag=0;
+for(int i=0;i<a.size();i++){
+    if((a[i]=='0' && b[i]=='0' ) && (a[i+1]=='1' && b[i+1]=='1' ))
+        {
+            flag=1;
+            break;
+        }
+}
+if(flag==1)
+cout<<"YES"<<nl;
+else 
+cout<<"NO"<<nl;
+
 }
 return 0;
 } 

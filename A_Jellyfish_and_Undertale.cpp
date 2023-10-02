@@ -5,8 +5,8 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
-#define   pii       pair <int, int>
+#define   nl         "\n"
+#define   pii       pair <ll, ll>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
 #define mset(a, b) memset(a, b, sizeof(a))
@@ -32,26 +32,26 @@ ll power(ll val,ll pw)
 */
 
 /* STL SYNTAX
-vector<int>v ;
+vector<ll>v ;
 cin>>x;
 v.push_back(x);
 
-pair<int, int>p ;
-vector<pair<int,int>>v;
+pair<ll, ll>p ;
+vector<pair<ll,ll>>v;
 v.pb(mp(a,b));
 
-vector< pair<int,int>>v(n);
- for(int i=0; i<n;i++){
+vector< pair<ll,ll>>v(n);
+ for(ll i=0; i<n;i++){
      cin>>v[i].first>>v[i].second; }
 
-set<int, greater<int> > s1;  set<int>st ;
+set<ll, greater<ll> > s1;  set<ll>st ;
 st.insert( x ) ;
-set<int> :: iterator itr;
+set<ll> :: iterator itr;
 for (itr = st.begin(); itr != st.end(); itr++) 
         cout << *itr << " ";
     
-map<int, int>mp ;
-map<char, int> :: iterator it ;
+map<ll, ll>mp ;
+map<char, ll> :: iterator it ;
 for(it = mp.begin() ; it!=mp.end(); it++)
         cout<<(*it).second<<nl ;
 */
@@ -60,15 +60,26 @@ for(it = mp.begin() ; it!=mp.end(); it++)
 int main()
 {
  FAST;
-int t=0;
+ll t=0;
 cin>>t;
 while(t--){
-int n,ans=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
+ll n,a,b,ans=0;
+cin>>a>>b>>n;
+ll arr[n+5];
 
-cout<<ans<<nl;
+for(ll i=0;i<n;i++){
+    cin>>arr[i];
+}
+sort(arr,arr+n);
+//ans=b;
+
+for(ll i=0;i<n;i++){
+    b+=min(arr[i],a-1);
+   
+
+}
+
+cout<<b<<nl;
 }
 return 0;
 } 

@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -64,9 +64,40 @@ int t=0;
 cin>>t;
 while(t--){
 int n,ans=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
+char arr[11][11];
+
+for(int i=1;i<=10;i++){
+    for(int j=1;j<=10;j++){
+        cin>>arr[i][j];
+        if(arr[i][j]=='X'){
+            if((( i==1 || i==10) && 1<=j<=10) || ( (j==1 || j==10) && 1<=i<=10)) {
+                //cout<<i<<" "<<j<<" "<<1<<nl;
+                ans+=1;
+                }
+
+            else if(( (i==2 || i==9 )&& 1<j<10) || ( (j==2 || j==9) && 1<i<10)) 
+            {
+              //  cout<<i<<" "<<j<<" "<<2<<nl;
+                ans+=2;
+                }
+            else if(( (i==3 || i==8) && 2<j<9) || ( (j==3 || j==8) && 2<i<9)) {
+               // cout<<i<<" "<<j<<" "<<3<<nl;
+                ans+=3;
+                }
+            else if((j==5 &&( i==5||i==6))|| (j==6 && (i==5||i==6))) {
+               // cout<<i<<" "<<j<<" "<<5<<nl;
+                ans+=5;
+                }
+            else {
+               // cout<<i<<" "<<j<<" "<<4<<nl;
+                ans+=4;
+                }
+            
+        }
+    
+}
+
+}
 
 cout<<ans<<nl;
 }

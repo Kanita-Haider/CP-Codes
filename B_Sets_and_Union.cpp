@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -65,6 +65,20 @@ cin>>t;
 while(t--){
 int n,ans=0;
 cin>>n;
+set<int>st;
+while(n--){
+    set<int>s1;
+ int m; cin>>m;
+
+for(int i=0;i<m;i++){
+    int a ; cin>>a;
+    s1.insert(a);
+    st.insert(a);
+ }
+ans=st.size()
+ 
+}
+ 
 vector<int>v(n+5);
 int arr[n+5];
 

@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -55,20 +55,39 @@ map<char, int> :: iterator it ;
 for(it = mp.begin() ; it!=mp.end(); it++)
         cout<<(*it).second<<nl ;
 */
-
+ll mod=10e9+7;
 
 int main()
 {
  FAST;
-int t=0;
+ll t=0;
 cin>>t;
 while(t--){
-int n,ans=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
+ll n,q,sum=0;
+cin>>n>>q;
+ll arr[n+5];
 
-cout<<ans<<nl;
+for(ll i=1;i<=n;i++){
+    cin>>arr[i];
+}
+while(q--){
+    ll l , r, x=1;
+    sum=0;
+    cin>>l>>r;
+    for(int i=l;i<=r;i++){
+  
+        
+        sum=(sum+(arr[i]*(x*x)%mod)%mod)%mod;
+       // cout<<sum<<nl;
+        //if(x>10e3) 
+        //if(sum>10e14) sum=sum%mod;
+        
+        x++;
+    }
+cout<<sum<<nl;
+}
+
+
 }
 return 0;
 } 

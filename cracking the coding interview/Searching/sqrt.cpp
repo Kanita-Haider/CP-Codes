@@ -15,10 +15,10 @@
 using namespace std;
 
 
-ll binarySearch(ll  n){
+ull binarySearch(ull  n){
 
-    ll  start=1, end=n/2, mid;
-
+    ull  start=1, end=10e9, mid;
+//cout<<sqrt(n)<<nl;
         while(start<=end){
              mid= start+(end-start)/2;
     
@@ -37,7 +37,7 @@ int main()
 {
  FAST;
 
-ll n,ans=0,x;
+ull n,ans=0,x;
 cin>>n;
 
 

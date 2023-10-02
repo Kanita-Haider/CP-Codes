@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -60,16 +60,35 @@ for(it = mp.begin() ; it!=mp.end(); it++)
 int main()
 {
  FAST;
-int t=0;
-cin>>t;
-while(t--){
-int n,ans=0;
-cin>>n;
-vector<int>v(n+5);
-int arr[n+5];
 
-cout<<ans<<nl;
+string s,s1,s2;
+cin>>s;
+
+vector<pair<char,char>> v;
+cout<<s<<nl;
+ for(int i=0; i<s.size(); i++){
+    if(i%2!=0) continue;
+        v.pb(mp(s[i],s[i+1]));
+        
+    
+ }
+
+
+  sort(v.begin(), v.end());
+
+while (next_permutation(v.begin(), v.end())){
+        s1.clear();s2.clear();
+        for (const auto& p : v) {
+            
+            s1+=p.first;
+            s2+=p.second;
+        }
+        cout <<s1<<s2<< endl;
 }
+
+
+
+
 return 0;
 } 
 

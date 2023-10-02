@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -68,7 +68,20 @@ cin>>n;
 vector<int>v(n+5);
 int arr[n+5];
 
-cout<<ans<<nl;
+for(int i=0;i<n;i++){
+    cin>>arr[i];
+
+}
+  if(arr[0]==1) v[0]=2;
+    else v[0]=1;
+for(int i=1;i<n;i++){
+    v[i]=v[i-1]+1;
+    if(v[i]==arr[i]) v[i]++;
+    
+}
+//for(auto i:v) cout<<v[i];
+
+cout<<v[n-1]<<nl;
 }
 return 0;
 } 

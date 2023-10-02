@@ -5,7 +5,7 @@
 #define   pb        push_back
 #define   ff        first
 #define   ss        second
-#define   nl         cout<<"\n"
+#define   nl         "\n"
 #define   pii       pair <int, int>
 #define   pll       pair <ll , ll > 
 #define   pi        acos(-1.0)
@@ -67,6 +67,15 @@ int n,ans=0;
 cin>>n;
 vector<int>v(n+5);
 int arr[n+5];
+for(int i=0; i<n; i++){
+cin>>arr[i];
+}
+for(int i=0; i<n-1; i++){
+    ans= gcd(arr[i],arr[i+1]);
+    
+}
+
+
 
 cout<<ans<<nl;
 }

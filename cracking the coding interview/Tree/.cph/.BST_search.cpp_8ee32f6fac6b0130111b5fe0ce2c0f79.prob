@@ -1,0 +1,1 @@
+{"name":"Local: BST_search","url":"d:\\CP-Codes\\cracking the coding interview\\Tree\\BST_search.cpp","tests":[{"id":1695661213979,"input":"6\n2 3 4 5 6 7\n4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\cracking the coding interview\\Tree\\BST_search.cpp","group":"local","local":true}
