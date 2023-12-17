@@ -14,6 +14,6 @@ int main()
             sum=sum+(v[i]* pow(x,j));
     }
     
-	cout << sum<<endl;;
+	cout << sum<<endl;
 	return 0;
 }

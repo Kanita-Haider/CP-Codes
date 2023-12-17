@@ -25,8 +25,10 @@ void dfs(int u){
 int main()
 {
  FAST;
-int n,m;
+int n,m.c;
 cin>>n>>m;
+int arr[n];
+for(int i=1;i<=n;i++) cin>>arr[i];
 
 for(int i=0; i<m;i++){
     int u,v,w;
@@ -37,16 +39,19 @@ for(int i=0; i<m;i++){
    //adj[u].pb({v,w});
    //adj[v].pb({u,w});
 }
+
+cin>>c;
+
 memset(vis,0,sizeof vis);
 dfs(1);
 
- for(int i=0; i<n;i++){
-     cout<<i<<"-> ";
-      for(int j=0; j<adj[i].size();j++){
-            cout<<adj[i][j]<<" ";
-     }
- cout<<"\n";
-}
+//  for(int i=0; i<n;i++){
+//      cout<<i<<"-> ";
+//       for(int j=0; j<adj[i].size();j++){
+//             cout<<adj[i][j]<<" ";
+//      }
+//  cout<<"\n";
+// }
 
 return 0;
 }

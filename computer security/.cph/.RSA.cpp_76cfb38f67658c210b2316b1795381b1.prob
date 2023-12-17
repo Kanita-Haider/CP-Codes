@@ -1,0 +1,1 @@
+{"name":"Local: RSA","url":"d:\\CP-Codes\\computer security\\RSA.cpp","tests":[{"id":1696961381255,"input":"5 7\nk","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\computer security\\RSA.cpp","group":"local","local":true}

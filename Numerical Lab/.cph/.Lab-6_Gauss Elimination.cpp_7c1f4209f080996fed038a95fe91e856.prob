@@ -1,0 +1,1 @@
+{"name":"Local: Lab-6_Gauss Elimination","url":"d:\\CP-Codes\\Numerical Lab\\Lab-6_Gauss Elimination.cpp","tests":[{"id":1698729185873,"input":"3\n2 1 1 10\n3 2 3 18\n1 4 9 16","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\Numerical Lab\\Lab-6_Gauss Elimination.cpp","group":"local","local":true}

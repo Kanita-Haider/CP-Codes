@@ -28,6 +28,7 @@ public:
         if(root == NULL){
             return new Node(data);
         }
+        
      else{
             Node* cur;
             if(data <= root->data) {

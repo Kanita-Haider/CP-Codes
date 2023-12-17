@@ -7,12 +7,15 @@
 #define FAST ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
 
+//time complexity O(V+E)
+//space complexity O(V+E)
+
 const int lim = 1e5+5;
 vector<int>adj[lim];
 int vis[lim],parent[lim];
 int nd,cycle;
 
-void dfs(int u){
+int dfs(int u){
     vis[u]=2;
     nd++;
      //  cout<<u<< " "<<f<<endl;
@@ -23,10 +26,14 @@ void dfs(int u){
                dfs(v);
            }
      else if(vis[v]==2 && v!=parent[u]){
-          cycle=1;
-          return;
+
+   
+          
+          return 1;
 
      }
+     else return 0;
+
     }
   //vis[u]=1;
 }
@@ -51,16 +58,17 @@ for(int i=1; i<=n;i++){
     if(vis[i]==0){
      nd=0,cycle=0;
         
-        dfs(i);
+        ans=dfs(i);
        
        //cout<<nd<<" nd\n";
-       if(cycle==1){
-       ans++;
+       if(ans==1){
+       cout<<1<<"\n";
+       break;
        }
     }
     
 }
- cout<<ans<<"\n";
+// cout<<ans<<"\n";
 mset(vis,0);
 mset(parent,0);
 
