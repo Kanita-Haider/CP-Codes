@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\CP-Codes\\YCPC\\A.cpp","tests":[{"id":1703257140832,"input":"2 2 2\nab\nba","output":""},{"id":1703258417501,"input":"3 1 2\naaa\nb","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP-Codes\\YCPC\\A.cpp","group":"local","local":true}

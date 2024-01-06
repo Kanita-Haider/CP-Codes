@@ -1,23 +1,27 @@
-#include<stdio.h>
-
+#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+using namespace std;
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+   string X,Y;
+   int length1, length2;
+
      
-    int arr[5], i=0;
+cin >>X;
+cin >>Y;
+// getline(cin,X);
+// getline(cin,Y);
+     length1 = X.size();
 
-    while(i<5){
+     length2 =Y.size();
 
-        arr[i]=i;
-        i++;
-        
-       // printf("%d %d\n",i,arr[i]);
-    }
 
-       
-
-    for( i=0;i<5;i++){
-       
-         printf("%d ",arr[i]);
-    }
-   
-    return 0;
-}
+    if(length1 < length2)
+    cout << X;
+    else
+    cout << Y;
+    return 0;
+ }
