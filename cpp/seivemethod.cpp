@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-#define MAX 1000
+#define MAX 100000000
+
  using namespace std;
 
  int primes[MAX+1];
@@ -7,6 +8,7 @@
 int main(){
     int i,j;
 	memset(primes, 1 , sizeof(primes) )  ;
+
 
 	for(i=2;i<MAX;i++){
 		if(primes[i]){
